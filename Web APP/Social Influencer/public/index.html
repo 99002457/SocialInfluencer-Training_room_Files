@@ -1,60 +1,35 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Login</title>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <style>
-   .back
-   {
-       width:60vw;
-       height:100vh;
-      
-   }
-   body
-   {
-       background-color: #3f3f3f;
-   }
-   .logo
-   {
-       z-index: 1;
-       width: 20vw;
-       height:25vh;
-       position: absolute;
-       top: 10vh;
-       left: 70vw;
+  
 
-   }
-   .not-block
-   {
-       position:absolute;
-       top:70vh;
-       left:69vw;
-       color:white;
-   }
-   .login-new
-   {
-    background-color: #05a3fa;  
-    margin-left: 8vw; 
-    padding-left:27px;
-    padding-right: 27px;
-   }
-  </style>
 </head>
   <body >
-    <img src="background.jpg" class="back"/>
+    <img src="images/background.jpg" class="backg"/>
+    
  
-    <img src="appLogo.png" class="logo"/>
-   <button type="button" class="btn btn-primary login-new" value="Login as Influencer">Login as <br>Influencer</button>
-   <button type="button" class="btn btn-primary login-new" value="Login as Influencer">Login as <br>Advertiser</button>
-   <a href=""></a><h4 class="not-block">Dont have an account?Create here.</h4></a>
+    <img src="images/appLogo.png" class="logo"/>
+   <button  id="influencer"type="button" class="btn btn-primary login-new" value="Login as Influencer">Login as <br>Influencer</button>
+   <button type="button" id="advertiser" class="btn btn-primary login-new" value="Login as Influencer">Login as <br>Advertiser</button>
+   <a href="Type_of_user_register.html"><h4 class="not-block">Dont have an account?Create here.</h4></a>
    
-
-
+   <script>
+    document.getElementById("influencer").onclick=()=>{
+      location.href="LoginInfluencer.html";
+    };
+    document.getElementById('advertiser').onclick=()=>{
+      location.href="LoginAdvertisers.html";
+    };
+  </script>
+ <link rel="stylesheet" href="styles/index.css">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
